@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is a newsgrid website, which applys for the CSS grid concepts">
+  <!-- Website Favicon Link
+  => (1) Go to dynamic drive favicon website, upload the project website logo png img and convert it into the '.ico' file and download it;
+    (2) Put this '.ico' img into the root of the project
+    (3) Copy and paste the link tag below
+  
+  -->
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Responsive -->
+  <link rel="stylesheet" href="./css/mobile.css">
+  <title>NewsGrid Website</title>
+</head>
+<body>
+    <header id="header">
+      <!-- Navbar -->
+      <div class="navbar top">
+        <div class="container">
+          <!-- Logo -->
+          <a href="index.html"><img src="./images/logo.png" id="logo"></a> 
+          <!-- Social Media -->
+          <div id="nav-social">
+            <a href="www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href="www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+          </div>
+          <!-- Navigation Menu -->
+          <nav id="nav-menu">
+            <ul>
+              <li><a href="index.html" class="current">Home</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Showcase -->
+      <div id="showcase">
+        <div class="container">
+          <div class="tag tag-sports">Sports</div>
+          <h1>Some Sports Article</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur placeat, maxime fuga nesciunt perspiciatis repellendus quasi odit saepe blanditiis vel sit quibusdam excepturi quia consectetur explicabo.</p>
+          <a href="post.html" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="posts">
+      <div class="container">
+        <h2>Editors Pick</h2>
+        <div id="post-grid">
+          <div class="post flex-row bg-lighter">
+            <img src="./images/articles/ent1.jpg" class="grid-img">
+            <div class="post-content">
+              <div class="tag tag-entertainment">Entertainment</div>
+              <h2><a href="post.html">orem ipsum dolor, sit amet consectetur</a></h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore asperiores modi nihil adipisci quisquam nobis eum, ut ipsam illo deserunt!</p>
+            </div>
+          </div>
+          <div class="post flex-row bg-dark">
+            <div class="post-content">
+              <div class="tag tag-sports">Sports</div>
+              <h2>Lorem ipsum dolor, sit amet</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore asperiores modi nihil adipisci quisquam nobis eum, ut ipsam illo deserunt!</p>
+            </div>
+          </div>
+          <div class="post flex-column bg-lighter">
+            <img src="./images/articles/tech1.jpg" class="grid-img">
+            <div class="post-content">
+              <div class="tag tag-technology">Technology</div>
+              <h2>Lorem ipsum dolor, sit amet </h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore asperiores modi nihil adipisci quisquam nobis eum, ut ipsam illo deserunt!</p>
+            </div>
+          </div>
+          <div class="post flex-column flex-column-reverse bg-lighter">
+            <img src="./images/articles/sports1.jpg" class="grid-img">
+            <div class="post-content">
+              <div class="tag tag-sports">Sports</div>
+              <h2>Lorem ipsum dolor, sit amet</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore asperiores modi nihil adipisci quisquam nobis eum, ut ipsam illo deserunt!</p>
+            </div>
+          </div>
+          <div class="post flex-column bg-lighter">
+            <img src="./images/articles/tech2.jpg" class="grid-img">
+            <div class="post-content">
+              <div class="tag tag-technology">Technology</div>
+              <h2>Lorem ipsum dolor, sit amet consectetur </h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore asperiores modi nihil adipisci quisquam nobis eum, ut ipsam illo deserunt!</p>
+            </div>
+          </div>
+          <div class="post flex-row bg-primary">
+            <div class="post-content">
+              <div class="tag tag-sports">Sports</div>
+              <h2>Lorem ipsum dolor, sit amet </h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore asperiores modi nihil adipisci quisquam nobis eum, ut ipsam illo deserunt!</p>
+            </div>
+          </div>
+          <div class="post flex-row flex-row-reverse bg-lighter">
+            <img src="./images/articles//ent2.jpg" class="grid-img">
+            <div class="post-content">
+              <div class="tag tag-entertainment">Entertainment</div>
+              <h2>Lorem ipsum dolor, sit amet.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore asperiores modi nihil adipisci quisquam nobis eum, ut ipsam illo deserunt!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer" class="bg-dark">
+      <div class="container">
+        <div id="footer-grid">
+          <div class="grid">
+            <img src="./images/logo_light.png" id="logo-light">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo id ut nemo iusto. Rerum, mollitia accusantium dignissimos voluptate laboriosam dicta consequatur consequuntur cum quibusdam ducimus!</p>
+          </div>
+
+          <div class="grid">
+            <h2>Email Newsletter</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <form id="subscribe">
+              <input type="email" name="email" id="email" placeholder="Enter email...">
+              <a href="#" class="btn btn-primary btn-block">Subscribe</a>
+            </form>
+          </div>
+
+          <div class="grid" id="sitelinks">
+            <h2>Site Links</h2>
+            <ul>
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="#">Privay & Policy</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="grid">
+            <h2>Join Our Club</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magni repellat.</p>
+            <a href="#" class="btn btn-secondary">Join Now</a>
+          </div>
+
+          <div class="grid" id="copyright">
+            <p>Copyright &copy; 2021, All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
