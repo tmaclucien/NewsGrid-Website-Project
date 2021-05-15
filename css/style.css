@@ -320,8 +320,13 @@
   }
 
   #footer-grid #subscribe #email {
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 10px;
+    width: 100%;
+  }
+
+  #footer-grid #subscribe .btn-block {
+    border: none;
     width: 100%;
   }
 
